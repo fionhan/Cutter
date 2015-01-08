@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>渴切sidebar示例</title>
+		<meta content="width=device-width,initial-scale=1" name="viewport">
+		<link rel="stylesheet" href="css/cutter.css">
+		<script src="js/jquery-1.3.2.min.js"></script>
+		<script src="js/cutter.js"></script>
+		<style>
+		h4{ font-size:22px; font-weight:normal; margin-top:5px; background:#666; padding:5px 10px; color:#fff; cursor:pointer;} h1{ font-size:40px; margin:20px 0;}
+		small{ font-size:11px; font-weight:normal; color:#666;}
+		ol li{ list-style:none;}pre{ border:#999 solid 1px; padding:20px; margin-bottom:10px; font-family:consolas,"Courier New",courier,monospace;}
+		.pink{ color:#ff00ff;} .blue{ color:#0000ff;} .deepblue{ color:#000099;} .gray{ color:#999999;} .red{ color:#ff0000;} .black{ color:#000;} .white{ color:white;}
+		</style>
+		<script>
+		$(function(){
+		$('.thinkcssbox h4').hover(function(){
+		$(this).css('background','#333');
+		},
+		function(){
+		$(this).css('background','#666');
+		})
+		$('.thinkcssbox h4').click(function(){
+		$(this).parent().find('.c').slideToggle();
+		})
+		})
+		</script>
+	</head>
+	<body>
+		<div class="topbar">
+			<div class="wrapper">
+				<div class="logo">
+					<a href="#"><font class="danley">KMMES</font>开目制造执行系统</a>
+				</div>
+				<div class="module">
+					<a href="#">任务确认</a>
+					<a href="#">任务执行</a>
+					<a href="#">任务结束</a>
+					<a href="#">任务汇报</a>
+					<a href="#">报警事件</a>
+				</div>
+				<div class="sub">
+					<a href="#">未登录</a>
+				</div>
+			</div>
+		</div>
+		<div class="row" id="container">
+			<div class="two">
+				<div class="dropdown-sidebar">
+					<div class="thinkcssbox">
+						<h4>时间 </h4>
+						<div class="c">
+							<ol>
+								<li><a href="#">当天</a></li>
+								<li><a href="#">三天内</a></li>
+								<li><a href="#">一周</a></li>
+								<li><a href="#">一个月内</a></li>
+								<li><a href="#">全部</a></li>
+							</ol>
+						</div>
+					</div>
+					<div class="thinkcssbox">
+						<h4>物料状态 </h4>
+						<div class="c">
+							<ol>
+								<li><a href="#">全部到料</a></li>
+								<li><a href="#">部分到料</a></li>
+								<li><a href="#">未到料</a></li>
+								<li><a href="#">全部</a></li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="ten">
+				
+			</div>
+			
+		</div>
+		
+	</body>
+</html>
