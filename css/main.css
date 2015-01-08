@@ -1,0 +1,39 @@
+/*设置不同状态任务的背景色*/
+.row-dispatched-task{
+    background-color:rgb(196,196,255);   
+}
+.row-confirm-task{
+    background-color:rgb(255,255,196);   
+}
+.row-executing-task{
+    background-color:rgb(204,255,255);   
+}
+.row-end-task{
+    background-color:rgb(255,255,196);   
+}
+.row-completed-task{
+    background-color:rgb(255,255,255);   
+}
+/*设置不同处理状态的报警事件行背景色*/
+.row-unhandled-alarm {
+    background-color:rgb(255,225,196);
+}
+.row-unhanding-alarm {
+    background-color:rgb(255,225,196);
+}
+.row-handled-alarm {
+    background-color:rgb(255,225,255);
+}
+.row-wrapper{
+	border-radius:5px;
+    border:solid 1px rgb(0,0,0);
+    margin:5px;
+    padding:5px;
+    width:110%;
+}
+.container-wrapper{
+	background-color:#E5E5E5;
+    border-radius:10px;
+    padding:5px;
+    height:500px;
+}
